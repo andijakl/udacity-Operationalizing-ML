@@ -23,6 +23,7 @@ For hyperparameter optimization, I upgraded the default framework to use to a ne
 The results of the hyperparameter training:
 
 |	|batch_size	|learning_rate	|TrainingJobName	|TrainingJobStatus	|FinalObjectiveValue	|TrainingStartTime	|TrainingEndTime	|TrainingElapsedTimeSeconds|
+|---|-------|-----------|-------------------------------------------|-----------|-------|---------------------------|---------------------------|-----|
 |1	|"512"	|0.065706	|pytorch-training-230320-2041-001-0e6f4f4a	|Completed	|2045.0	|2023-03-20 20:42:07+00:00	|2023-03-20 20:54:08+00:00	|721.0|
 |0	|"128"	|0.002556	|pytorch-training-230320-2041-002-2e2418b3	|Completed	|167.0	|2023-03-20 20:55:49+00:00	|2023-03-20 21:07:09+00:00	|680.0|
 
