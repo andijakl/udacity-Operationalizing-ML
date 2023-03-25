@@ -164,7 +164,7 @@ The following screenshot shows the endpoint with successfully configured provisi
 
 To further improve the performance, it's also possible to set up auto-scaling for the endpoint if this is the bottleneck. In the SageMaker console, I navigate to the deployed endpoint. In the configuration, I scroll down to the "Endpoint runtime settings" section. 
 
-Next, I select the one running with the current instance type (`ml.t2.medium`) and 
+Next, I select the one running with the current instance type. Note that the `ml.t2.medium` instance types are already burstable and don't support autoscaling. The endpoint therefore needs to have a different type.
 
 As the model prediction is fast, I would choose a low number of maximum instances. It doesn't have to be too low, as the instances are only created on demand anyway and I only need to pay the required instances. A good compromise for the maximum capacity could be 3 instances, minimum capacity at 1 instance. The `Scale-in cool down (seconds)` could be 30 seconds, and the `Scale-out cool down (seconds)` 300 seconds for this configuration and expected workload.
 
